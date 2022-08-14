@@ -58,36 +58,54 @@
     ![图 1](../images/1c455a33a6b828c80eca640a09774a9a8adaabcd333364fbacb6977e0c655c06.png)  
 
 
-## 2.5 HTML 注释
+## 2.5 骨架标签解释
 
-- 注释的作用
-  - 为代码添加的具有解释性、描述性的信息，主要用来帮助开发人员理解代码
-  - 浏览器执行代码时会忽略所有的注释
-
-
-- 注释的快捷键
-  - 在VS Code中：ctrl + /
-
-
-## 2.6 VSCode 工具生成骨架标签新增代码
-
-### 2.6.1 文档类型声明标签 
+### 2.5.1 文档类型声明标签 
 
 - `<!DOCTYPE>` 文档类型声明，作用就是告诉浏览器使用哪种HTML版本来显示网页
 - `<!DOCTYPE html>`这句代码的意思是: 当前页面采取的是 HTML5 版本来显示网页
 - `<!DOCTYPE>` 声明位于文档中的最前面的位置，处于 `<html>` 标签之前
 - `<!DOCTYPE>`不是一个 HTML 标签，它是文档类型声明标签
 
-### 2.6.2 lang 语言
+### 2.5.2 lang 语言
 
 - 用来定义当前文档显示的语言
 - 简单来说,定义为en 就是英文网页, 定义为 zh-CN 就是中文网页
 - 其实对于文档显示来说，定义成en的文档也可以显示中文，定义成zh-CN的文档也可以显示英文
 
-### 2.6.3 charset 字符集
+### 2.5.3 charset 字符集
 
 - 字符集 (Character set)是多个字符的集合。以便计算机能够识别和存储各种文字
 - 在`<head>`标签内，可以通过`<meta>`标签的 charset 属性来规定 HTML 文档应该使用哪种字符编码
 - charset 常用的值有：GB2312 、BIG5 、GBK 和 UTF-8，其中 UTF-8 也被称为万国码，基本包含了全世界所有国家需要用到的字符
 - `<meta charset="UTF-8">`是必须要写的代码，否则可能引起乱码的情况。一般情况下，统一使用“UTF-8”编码，尽量统一写成标准的 "UTF-8"，不要写成 "utf8" 或 "UTF8"
+
+
+~~~html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!--charset="UTF-8" 规定网页的字符编码  -->
+    <meta charset="UTF-8">
+
+    <!-- ie(兼容性差) / edge -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- 宽度 = 设备宽度 : 移动端网页的时候要用 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+</html>
+~~~
+
+## 2.6 HTML 注释
+
+- 注释的作用
+  - 为代码添加的具有解释性、描述性的信息，主要用来帮助开发人员理解代码
+  - 浏览器执行代码时会忽略所有的注释
+- 注释的快捷键：在VS Code中：ctrl + /
+
+
 

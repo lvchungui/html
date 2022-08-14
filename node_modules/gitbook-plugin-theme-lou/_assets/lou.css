@@ -245,8 +245,8 @@ body {
   cursor: pointer;
 }
 .book-anchor-body {
-  max-height: 300px;
-  overflow: auto;
+  max-height: 500px;
+  overflow: visible;
 }
 .book-anchor-body::-webkit-scrollbar {
   /*滚动条整体样式*/
@@ -286,10 +286,9 @@ body {
 .book-anchor .anchor-h1 {
 }
 .book-anchor .anchor-h2 {
-  padding-left: 20px;
 }
 .book-anchor .anchor-h3 {
-  padding-left: 30px;
+  padding-left: 10px;
 }
 
 /* 赞赏码 + 版权 */
